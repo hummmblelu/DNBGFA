@@ -1,7 +1,6 @@
-This repository contains impelementation of DNBGDA model[1]
+This repository contains impelementations of DNBGDA l[1].
 
-To run the code, you need to prepare two R objects X, and m_len. X is the list of term-document matrix (tm package) and m_len denoces number of documents from each
-source at eatch time stamp. You can load the example dataset to get familiar with the required format:
+To run the code, you need to prepare two R objects X, and m_len. X is the list of term-document matrix (tm package) and m_len denoces number of documents from each source at eatch time stamp. You can load the example dataset in R to get familiar with the required format:
 
 ```
 load("example_data.RData")
