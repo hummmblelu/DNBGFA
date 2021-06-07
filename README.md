@@ -17,7 +17,6 @@ and then
 ```
 model<- model_setup(X, m_len, 20)
 update_model(model, iter = 1000, mc.cores = 10, print_topics = T)
-
 ```
 
 or do
