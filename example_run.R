@@ -16,7 +16,7 @@ print("inference model")
 X_remvd<- X[[2]]
 X[[2]]<- NULL ## make the second matrix null
 model<- model_setup(X, m_len, 20)
-model<- update_model_interp(model, iter = 10, inter_t = 2, mc.cores = 10)
+model<- update_model_interp(model, iter = 1000, inter_t = 2, mc.cores = 10)
 
 ## compute expected Z at the time stamp 2
 exp_z<- apply(model$var_params$m_eta[,,2], 2, function(x) exp(x) / sum(exp(x)))
