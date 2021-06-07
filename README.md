@@ -4,8 +4,8 @@ To run the code, you need to prepare two R objects X, and m_len. X is the list o
 
 ```
 load("example_data.RData")
-str(X) ## Term-document matrices of 11 time stamps
-str(m_len) ## Doucment length of 11 time stamps (50 documents from each source, for all time stampes)
+str(X) ## Term-document matrices of 12 time stamps
+str(m_len) ## Doucment length of 12 time stamps (50 documents from each source, for all time stampes)
 ```
 
 After preparing the objects, you can load the required functions by
