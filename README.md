@@ -25,7 +25,7 @@ or do
 
 ```
 model<- model_setup(X, m_len, 20)
-model<- update_model_interp(model, iter = 10, inter_t = 2, mc.cores = 10)
+model<- update_model_interp(model, iter = 1000, inter_t = 2, mc.cores = 10)
 ```
 
 for interpolation task (the second time stamp).
