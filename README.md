@@ -1,9 +1,11 @@
 This repository contains impelementations of DNBGDA l[1].
 
-To run the code, you need to prepare two R objects X, and m_len. X is the list of term-document matrix (tm package) and m_len denoces number of documents from each source at eatch time stamp. You can load the example dataset in R to get familiar with the required format:
+To run the code, you need to prepare two R objects X, and m_len. X is the list of term-document matrix (tm package) and m_len denoces number of documents from each source at eatch time stamp. Note that all the matrices in X should be sharing the same vocabularies, therefore, they should of the same number of rows. You can load the example dataset in R to get familiar with the required format:
 
 ```
 load("example_data.RData")
+str(X)
+str(m_len)
 ```
 
 After preparing the objects, you can load the required functions by
