@@ -185,7 +185,7 @@ update_w_interp<- function(var_params, hyper_params, inter_t, mc.cores = 10){
     
     if(t_stamp == inter_t){
       ## prior information only
-      S_W_t<- lapply(1:sum(m_len_t), function(d) diag(1/Sigma_ard_t[,d]))
+      S_W_t<- lapply(1:sum(m_len_t), function(d) diag(Sigma_ard_t[,d]))
       m_w_t<- matrix(0, sum(m_len_t), nrow(Sigma_ard_t))
     }else{
       S_W_t<- lapply(1:sum(m_len_t), function(d){
